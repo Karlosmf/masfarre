@@ -15,7 +15,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Grax | Home</title>
+<title>Masfarre | Servicios audio visuales</title>
 
 <!-- STYLES -->
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -234,94 +234,12 @@
 		<div class="grax_tm_portfolio">
 			<div class="container">
 				<div class="grax_tm_title_holder">
-					<h3>Selected <span>Works</span></h3>
+					<h3>Ultimos <span>Eventos</span></h3>
 				</div>
 				<div class="portfolio_list">
-					<ul class="gallery_zoom my_waypoint">
-						<li class="wow fadeInLeft" data-wow-duration="1.5s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/placeholders/1-1.jpg" alt="" />
-									<div class="main" data-img-url="img/portfolio/1.jpg"></div>
-								</div>
-								<div class="overlay"></div>
-								<div class="details">
-									<span>Video</span>
-									<h3>Sweet Fruit</h3>
-								</div>
-								<a class="grax_tm_full_link popup-youtube" href="https://www.youtube.com/watch?v=ICr_bOuM9Zo"></a>
-							</div>
-						</li>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/placeholders/1-1.jpg" alt="" />
-									<div class="main" data-img-url="img/portfolio/2.jpg"></div>
-								</div>
-								<div class="overlay"></div>
-								<div class="details">
-									<span>Branding</span>
-									<h3>Good Present</h3>
-								</div>
-								<a class="grax_tm_full_link zoom" href="img/portfolio/2.jpg"></a>
-							</div>
-						</li>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/placeholders/1-1.jpg" alt="" />
-									<div class="main" data-img-url="img/portfolio/3.jpg"></div>
-								</div>
-								<div class="overlay"></div>
-								<div class="details">
-									<span>Design</span>
-									<h3>Ice Cream</h3>
-								</div>
-								<a class="grax_tm_full_link zoom" href="img/portfolio/3.jpg"></a>
-							</div>
-						</li>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/placeholders/1-1.jpg" alt="" />
-									<div class="main" data-img-url="img/portfolio/4.jpg"></div>
-								</div>
-								<div class="overlay"></div>
-								<div class="details">
-									<span>Video</span>
-									<h3>Black Coffee</h3>
-								</div>
-								<a class="grax_tm_full_link popup-youtube" href="https://www.youtube.com/watch?v=ICr_bOuM9Zo"></a>
-							</div>
-						</li>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/placeholders/1-1.jpg" alt="" />
-									<div class="main" data-img-url="img/portfolio/5.jpg"></div>
-								</div>
-								<div class="overlay"></div>
-								<div class="details">
-									<span>Branding</span>
-									<h3>Blue Lemon</h3>
-								</div>
-								<a class="grax_tm_full_link zoom" href="img/portfolio/5.jpg"></a>
-							</div>
-						</li>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/placeholders/1-1.jpg" alt="" />
-									<div class="main" data-img-url="img/portfolio/7.jpg"></div>
-								</div>
-								<div class="overlay"></div>
-								<div class="details">
-									<span>Design</span>
-									<h3>Delicious Cherry</h3>
-								</div>
-								<a class="grax_tm_full_link zoom" href="img/portfolio/7.jpg"></a>
-							</div>
-						</li>
+					<ul class="gallery_zoom my_waypoint " id="cb-gallery">
+						<!-- inyecto los albunes -->
+						
 					</ul>
 				</div>
 			</div>
@@ -351,7 +269,7 @@
 		<div class="grax_tm_news">
 			<div class="container">
 				<div class="grax_tm_title_holder">
-					<h3>Latest <span>News</span></h3>
+					<h3>Ultimos <span>Post</span></h3>
 				</div>
 				<div class="news_list">
 					<ul>
@@ -503,7 +421,7 @@
 							<div class="first">
 								<ul>
 									<li>
-										<input id="name" type="text" placeholder="Name">
+										<input id="name" type="text" placeholder="Apellido y Nombre">
 									</li>
 									<li>
 										<input id="email" type="text" placeholder="Email">
@@ -511,10 +429,10 @@
 								</ul>
 							</div>
 							<div class="last">
-								<textarea id="message" placeholder="Message"></textarea>
+								<textarea id="message" placeholder="Mensaje"></textarea>
 							</div>
 							<div class="grax_tm_button">
-								<a id="send_message" href="#">Send Message</a>
+								<a id="send_message" href="#">Enviar</a>
 							</div>
 
 							<!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
@@ -573,13 +491,18 @@
 		
 </div>
 <!-- / WRAPPER ALL -->
+ <button id="guardarStilos">
+	guardar stilos 
+ </button>
 	
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
+<script src="js/datos-album.js"></script>
+<script src="js/tema.js"></script>
 <!-- /SCRIPTS -->
+
 
 </body>
 </html>

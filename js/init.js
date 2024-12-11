@@ -704,3 +704,4 @@ function grax_tm_totop(){
 		return false;
 	});
 }
+
