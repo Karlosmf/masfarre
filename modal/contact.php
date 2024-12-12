@@ -1,14 +1,16 @@
 <?php
 
 // Put contacting email here
-$php_main_email = "example@gmail.com";
+$php_main_email = "edy@magicsound.com.ar";
 
 //Fetching Values from URL
 $php_name = $_POST['ajax_name'];
 $php_email = $_POST['ajax_email'];
 $php_message = $_POST['ajax_message'];
-
-
+$php_evtdate = $_POST['ajax_evtdate'];
+$php_typeevt = $_POST['ajax_typeevt'];
+$php_location = $_POST['ajax_location'];
+$php_phone = $_POST['ajax_phone'];
 
 //Sanitizing email
 $php_email = filter_var($php_email, FILTER_SANITIZE_EMAIL);
@@ -26,14 +28,18 @@ if (filter_var($php_email, FILTER_VALIDATE_EMAIL)) {
 		$php_headers .= 'From:' . $php_email. "\r\n"; // Sender's Email
 		$php_headers .= 'Cc:' . $php_email. "\r\n"; // Carbon copy to Sender
 		
-		$php_template = '<div style="padding:50px;">Hello ' . $php_name . ',<br/>'
-		. 'Thank you for contacting us.<br/><br/>'
-		. '<strong style="color:#f00a77;">Name:</strong>  ' . $php_name . '<br/>'
+		$php_template = '<div style="padding:50px;">Hola ' . $php_name . ',<br/>'
+		. 'Gracias por contactarnos.<br/><br/>'
+		. '<strong style="color:#f00a77;">Nombre:</strong>  ' . $php_name . '<br/>'
 		. '<strong style="color:#f00a77;">Email:</strong>  ' . $php_email . '<br/>'
-		. '<strong style="color:#f00a77;">Message:</strong>  ' . $php_message . '<br/><br/>'
-		. 'This is a Contact Confirmation mail.'
+		. '<strong style="color:#f00a77;">Telefono:</strong>  ' . $php_phone . '<br/>'
+		. '<strong style="color:#f00a77;">Fecha:</strong>  ' . $php_evtdate . '<br/>'
+		. '<strong style="color:#f00a77;">Tipo:</strong>  ' . $php_typeevt . '<br/>'
+		. '<strong style="color:#f00a77;">Lugar:</strong>  ' . $php_location . '<br/>'
+		. '<strong style="color:#f00a77;">Mensaje:</strong>  ' . $php_message . '<br/><br/>'
+		. 'Esta es una confirmacion del contacto.'
 		. '<br/>'
-		. 'We will contact you as soon as possible .</div>';
+		. 'Lo contactaremos lo mas pronto posible .</div>';
 		$php_sendmessage = "<div style=\"background-color:#f5f5f5; color:#333;\">" . $php_template . "</div>";
 		
 		// message lines should not exceed 70 characters (PHP rule), so wrap it
