@@ -582,6 +582,10 @@ function grax_tm_contact_form(){
 		
 		var name 		= jQuery(".contact_form #name").val();
 		var email 		= jQuery(".contact_form #email").val();
+		var phone 		= jQuery(".contact_form #phone").val();
+		var evtdate 		= jQuery(".contact_form #evtdate").val();
+		var typeevt		= jQuery(".contact_form #typeevt").val();
+		var location		= jQuery(".contact_form #location").val();
 		var message 	= jQuery(".contact_form #message").val();
 		var subject 	= jQuery(".contact_form #subject").val();
 		var success     = jQuery(".contact_form .returnmessage").data('success');
@@ -594,7 +598,7 @@ function grax_tm_contact_form(){
 		}
 		else{
 			// Returns successful data submission message when the entered information is stored in database.
-			jQuery.post("modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
+			jQuery.post("modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_phone: phone, ajax_evtdate: evtdate, ajax_typeevt: typeevt, ajax_location: location, ajax_message:message, ajax_subject: subject}, function(data) {
 				
 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
 				

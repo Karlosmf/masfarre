@@ -1,7 +1,7 @@
 <?php
 
 // Put contacting email here
-$php_main_email = "edy@magicsound.com.ar";
+$php_main_email = "edy@masfarre.com";
 
 //Fetching Values from URL
 $php_name = $_POST['ajax_name'];
@@ -47,6 +47,7 @@ if (filter_var($php_email, FILTER_VALIDATE_EMAIL)) {
 		
 		// Send mail by PHP Mail Function
 		mail($php_main_email, $php_subject, $php_sendmessage, $php_headers);
+		mail($php_email, $php_subject, $php_sendmessage, $php_headers);
 		echo "";
 	
 	

@@ -42,7 +42,7 @@ body{
 	color: #767676;
 }
 svg{
-	fill: currentcolor;
+	/* fill: currentcolor; */
 	width: 15px;
 	height: 15px;
 }
@@ -490,7 +490,7 @@ h6 { font-size: 16px; }
 	right: 0px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: right center;
 }
 .grax_tm_hero .bg .overlay{
 	position: absolute;
@@ -516,7 +516,7 @@ h6 { font-size: 16px; }
 	z-index: 5;
 }
 .grax_tm_hero .name{
-	font-size: 72px;
+	font-size: 50px;
 	font-weight: 700;
 	color: #fff;
 	margin-bottom: 11px;
@@ -846,7 +846,9 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 }
-.grax_tm_title_holder span{color: #e54b4b;	}
+/*
+.grax_tm_title_holder span{color: #A6539B;	}
+*/
 .grax_tm_title_holder h3{
 	text-transform: uppercase;
 	font-weight: 700;
@@ -910,7 +912,7 @@ h6 { font-size: 16px; }
 	left: 0px;
 	right: 0px;
 	z-index: 1;
-	background-color: #f9f9f9;
+	background-color: #f9f9f9d1;
 	border-radius: 5px;
 	
 	opacity: 0;
@@ -1648,8 +1650,8 @@ body.modal{
 	color: #fff;
 }
 .grax_tm_copyright .social .svg{
-	width: 17px;
-	height: 17px;
+	width: 30px;
+	height: 30px;
 }
 .grax_tm_copyright .copy p{
 	text-transform: uppercase;
@@ -1869,7 +1871,9 @@ body.modal{
 	top: 20%;
 	right: -200px;
 	width: 200px;
-	background-color: rgba(0,0,0,1.00);
+	background-color: rgba(182, 182, 182, 0.632);
+	border:1px solid #000;
+	border-radius: 0px 50px 50px 50px;
 	padding: 40px 20px 33px 30px;
 	
 	-webkit-transition: all .3s ease;
@@ -1891,14 +1895,15 @@ body.modal{
 	position: absolute;
 	top: 0px;
 	right: 100%;
-	background-color: #000;
+	background-color: #ffffff90;
 	padding: 12px 12px 4px 12px;
+	border-radius: 50% 0% 0% 50%;
 }
 .grax_tm_settings .icon .svg{
 	color: #fff;
 	width: 25px;
 	height: 25px;
-	animation: fa-spin 2s infinite linear;
+	animation: fa-spin 8s infinite linear;
 }
 .grax_tm_settings .link{
 	position: absolute;
@@ -2337,7 +2342,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 }
 @media (max-width: 768px) {
 	.grax_tm_title_holder h3{letter-spacing: 5px;}
-	.grax_tm_hero .name{font-size: 45px;margin-bottom: 5px;}
+	.grax_tm_hero .name{font-size: 35px;margin-bottom: 5px;}
 	.grax_tm_hero .job{font-size: 17px;}
 	.grax_tm_about .right .list ul{margin: 0px;}
 	.grax_tm_about .right .list ul li{width: 100%;padding-left: 0px;}
@@ -2365,7 +2370,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 	.grax_tm_intro_content .demo_list ul li{width: 100%;padding-left: 0px;}
 }
 @media (max-width: 480px) {
-	.grax_tm_hero .name{font-size: 30px;}
+	.grax_tm_hero .name{font-size: 25px;}
 	.grax_tm_hero .job{font-size: 15px;}
 	.grax_tm_portfolio ul{margin: 0px;}
 	.grax_tm_portfolio ul li{width: 100%;padding-left: 0px;}
