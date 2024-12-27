@@ -18,7 +18,7 @@ const obtenerFolders = async () => {
 async function replaceDom() {
   const posts = await obtenerFolders(); 
   // Selecciona el contenedor donde se agregarán los elementos <li>
-  const container = document.querySelector("#cb-gallery   "); // Cambia por el ID o selector de tu contenedor
+  const container = document.querySelector("#cb-gallery"); // Cambia por el ID o selector de tu contenedor
   // Itera sobre el array 'posts' y crea elementos <li> dinámicamente
   posts.forEach(post => {
     // Crear el elemento <li> dinámicamente
@@ -30,7 +30,7 @@ async function replaceDom() {
     // Inserta el contenido HTML en el <li>
     li.innerHTML = `
     <div class="list_inner">
-    <div class="imageCulo">
+    <div class="imageCaptured">
               <img src="${post.url_image}" alt="${post.title}" />
               <div class="main" data-img-url="${post.url_image}"></div>
               </div>
@@ -49,3 +49,4 @@ async function replaceDom() {
 }
 
 replaceDom();
+
